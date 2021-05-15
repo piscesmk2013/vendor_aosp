@@ -5,3 +5,5 @@ do
         lunch_others_targets+=("aosp_$d-$v")
     done
 done
+
+export SKIP_ABI_CHECKS=true
