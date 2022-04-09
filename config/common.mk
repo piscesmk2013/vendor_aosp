@@ -272,4 +272,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.wm.debug.lockscreen_live_wallpaper=true
 
+# Themed icons
+$(call inherit-product, packages/overlays/ThemeIcons/config.mk)
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
