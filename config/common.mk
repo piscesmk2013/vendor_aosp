@@ -299,4 +299,8 @@ $(call inherit-product, packages/overlays/ThemeIcons/config.mk)
 PRODUCT_PACKAGES += \
     BatteryStatsViewer
 
+# Display
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    debug.sf.frame_rate_multiple_threshold=60
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
