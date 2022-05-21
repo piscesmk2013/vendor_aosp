@@ -258,4 +258,8 @@ $(call inherit-product, vendor/aosp/config/ota.mk)
 PRODUCT_PACKAGES += \
     GameSpace
 
+# Display
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    debug.sf.frame_rate_multiple_threshold=60
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
