@@ -288,4 +288,8 @@ PRODUCT_BOOT_JARS += \
     tcmiface \
     telephony-ext
 
+# Game space
+PRODUCT_PACKAGES += \
+    GameSpace
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
