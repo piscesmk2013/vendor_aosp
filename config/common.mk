@@ -253,4 +253,8 @@ include vendor/aosp/config/version.mk
 # OTA
 $(call inherit-product, vendor/aosp/config/ota.mk)
 
+# Game space
+PRODUCT_PACKAGES += \
+    GameSpace
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
