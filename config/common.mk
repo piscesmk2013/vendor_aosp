@@ -133,6 +133,10 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 PRODUCT_PACKAGES += \
     QuickAccessWallet
 
+# Game space
+PRODUCT_PACKAGES += \
+    GameSpace
+
 # Gboard configuration
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.com.google.ime.theme_id=5 \
