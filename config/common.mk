@@ -310,4 +310,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.boot.hypervisor.vm.supported=1 \
     ro.boot.hypervisor.protected_vm.supported=1
 
+# Battery stats viewer
+PRODUCT_PACKAGES += \
+    BatteryStatsViewer
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
