@@ -295,4 +295,8 @@ PRODUCT_PACKAGES += \
 # Themed icons
 $(call inherit-product, packages/overlays/ThemeIcons/config.mk)
 
+# Battery stats viewer
+PRODUCT_PACKAGES += \
+    BatteryStatsViewer
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
