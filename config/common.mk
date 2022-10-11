@@ -302,4 +302,8 @@ TARGET_EXCLUDE_QCOM_SEPOLICY := true
 $(call inherit-product, device/qcom/common/common.mk)
 include vendor/qcom/opensource/core-utils/build/utils.mk
 
+# Battery stats viewer
+PRODUCT_PACKAGES += \
+    BatteryStatsViewer
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
