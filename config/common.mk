@@ -230,6 +230,9 @@ $(call inherit-product, vendor/aosp/config/ota.mk)
 # RRO Overlays
 $(call inherit-product, vendor/aosp/config/rro_overlays.mk)
 
+# Themes
+$(call inherit-product, vendor/aosp/config/themes.mk)
+
 # Clocks
 $(call inherit-product, vendor/aosp/config/clocks.mk)
 
