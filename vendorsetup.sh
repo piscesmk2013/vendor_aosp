@@ -7,9 +7,3 @@ do
 done
 
 export SKIP_ABI_CHECKS=true
-
-# Enable global ThinLTO
-#
-# This doesn't increase build time significantly, so enable it for
-# performance.
-export GLOBAL_THINLTO=true
