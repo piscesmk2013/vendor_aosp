@@ -125,6 +125,13 @@
         <!-- ART heap compaction for cached apps -->
         <item>activity_manager/use_compaction=true</item>
 
+	<!-- USAP Pool -->
+	<item>runtime_native/usap_pool_enabled=true</item>
+	<item>runtime_native/usap_pool_refill_delay_ms=3000</item>
+	<item>runtime_native/usap_pool_size_max=10</item>
+	<item>runtime_native/usap_pool_size_min=1</item>
+	<item>runtime_native/usap_refill_threshold=5</item>
+
         <!--
             Device Personalization Services (AiAi)
         -->
