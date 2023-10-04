@@ -420,4 +420,8 @@
     <!-- the number of the max cached processes in the system. -->
     <integer name="config_customizedMaxCachedProcesses">4096</integer>
 
+    <!-- Whether the lock screen is allowed to run its own live wallpaper,
+         different from the home screen wallpaper. -->
+    <bool name="config_independentLockscreenLiveWallpaper">true</bool>
+
 </resources>
