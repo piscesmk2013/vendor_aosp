@@ -218,6 +218,10 @@ TARGET_SUPPORTS_CALL_RECORDING ?= true
 #    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
 #endif
 
+# Enable lockscreen live wallpaper
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.wm.debug.lockscreen_live_wallpaper=true
+
 # NexusLauncher resources
 PRODUCT_PACKAGES += \
     NexusLauncherResOverlay
