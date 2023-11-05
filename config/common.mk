@@ -260,4 +260,9 @@ $(call inherit-product, vendor/aosp/config/ota.mk)
 # Certification
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 
+# Inherit device/qcom/common, QCOM core-utils and exclude QCOM SEPolicy
+TARGET_EXCLUDE_QCOM_SEPOLICY := true
+$(call inherit-product, device/qcom/common/common.mk)
+include vendor/qcom/opensource/core-utils/build/utils.mk
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
