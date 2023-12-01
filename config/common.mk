@@ -301,4 +301,7 @@ TARGET_EXCLUDE_QCOM_SEPOLICY := true
 $(call inherit-product, device/qcom/common/common.mk)
 include vendor/qcom/opensource/core-utils/build/utils.mk
 
+# Certification
+$(call inherit-product-if-exists, vendor/certification/config.mk)
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
