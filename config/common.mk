@@ -304,4 +304,10 @@ include vendor/qcom/opensource/core-utils/build/utils.mk
 # Certification
 $(call inherit-product-if-exists, vendor/certification/config.mk)
 
+# Virtualization
+$(call inherit-product, packages/modules/Virtualization/apex/product_packages.mk)
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.boot.hypervisor.vm.supported=1 \
+    ro.boot.hypervisor.protected_vm.supported=1
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
