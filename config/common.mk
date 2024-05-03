@@ -116,10 +116,17 @@ PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 # leave less information available via JDWP.
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
+# Disable dexpreopt debug info
+WITH_DEXPREOPT_DEBUG_INFO := false
+
+# Reduce system server verbosity
+PRODUCT_SYSTEM_SERVER_DEBUG_INFO := false
+
 # Enable whole-program R8 Java optimizations for SystemUI and system_server,
 # but also allow explicit overriding for testing and development.
 SYSTEM_OPTIMIZE_JAVA ?= true
 SYSTEMUI_OPTIMIZE_JAVA ?= true
+FULL_SYSTEM_OPTIMIZE_JAVA ?= true
 
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
