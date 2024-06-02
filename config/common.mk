@@ -317,4 +317,7 @@ include vendor/qcom/opensource/core-utils/build/utils.mk
 PRODUCT_PACKAGES += \
     BatteryStatsViewer
 
+# Certification
+$(call inherit-product-if-exists, vendor/extra/product.mk)
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
